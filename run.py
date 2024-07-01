@@ -20,6 +20,7 @@ def listenHotword():
 
     # Start both processes
 if __name__ == '__main__':
+        multiprocessing.set_start_method('spawn')
         p1 = multiprocessing.Process(target=startJarvis)
         p2 = multiprocessing.Process(target=listenHotword)
         p1.start()
