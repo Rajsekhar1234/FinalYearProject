@@ -11,6 +11,6 @@ def start():
     playAssistantSound()
 
 
-    os.system('start msedge.exe --app="http://localhost:8000/indexx.html"')
+    os.system('start msedge.exe --app="http://indexx.html"')
 
-    eel.start('indexx.html', mode=None, host='localhost', block=True)
+    eel.start('indexx.html', mode=None, block=True)
